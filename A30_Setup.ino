@@ -48,7 +48,7 @@ void setup() {
 #endif
   CAN1.setMode(MCP_NORMAL);
 #endif
-#ifdef CAN2_CSt
+#ifdef CAN2_CS
   while (CAN2.begin(MCP_ANY, CAN2_BUS_SPEED, CAN2_CLOCK_RATE) != CAN_OK) {
     Serial.println(F("Error Initializing CAN2 MCP2515. Retrying in 1 sec.."));
     Serial.println();
